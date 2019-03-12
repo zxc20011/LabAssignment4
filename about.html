@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Assignment 4</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+    }
+    p {
+      margin: 15px auto 20px;
+    }
+    body,
+    html {
+      width: 100vw;
+      height: 100vh;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .box-shadow {
+      -webkit-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+      box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+    }
+    .main-container-grid {
+      display: grid;
+      grid-template-rows: 1fr 13fr 1fr;
+      height: 100%;
+      grid-row-gap: 1em;
+    }
+    .r1,
+    .r3 {
+      display: grid;
+      background-color: #CCC;
+      padding: 1em;
+      align-items: center;
+    }
+    .r3 {
+      text-align: center;
+    }
+    .r2 {
+      height: 100%;
+      background-color: #f1f1f1;
+    }
+    .three-column {
+      display: grid;
+      grid-template-columns: 2fr 8fr 3fr;
+      background-color: #FFF;
+      grid-column-gap: 1em;
+    }
+    .c1 {
+      min-width: 200px;
+    }
+    .c1, .c3 {
+      background-color: #f4f4f4;
+    }
+    .txt-center {
+      text-align: center;
+      margin: 15px auto 0px;
+      border-bottom: 1px solid #a8a7a7;
+      padding-bottom: 15px;
+    }
+    .left-nav {
+      list-style-type: none;
+    }
+    .left-nav > li > a {
+      display: block;
+      padding:15px 0px 15px 30px;
+      background-color: #f4f4f4;
+      font-weight: bold;
+      text-decoration: none;
+      transition-duration: 0.7s;
+    }
+    .left-nav > li > a:hover {
+      background-color: #8d8c8c;
+    }
+    .c2 {
+      padding: 40px 20%;
+    }
+    .h2-content {
+      grid-column: 1 / 5;
+      height: 22px;
+      width: 100%;
+    }
+    .c2 > img {
+      width: 100%;
+      align-self: center;
+      max-height: 130px;
+    }
+    .gap {
+        font-size:12px;
+        margin: 0px 50px ;
+    }
+
+  </style>
+</head>
+
+<body class="main-container-grid">
+  <div class="r1 box-shadow">
+    <h2>Zhihong Liang</h2>
+  </div>
+  <div class="r2 one-column">
+    <div class="c2">
+        <a href="./index.html" class="back-button">Back to Home</a>
+      <h2>The Aegis Knight - 5 : The Lost Legend</h2>
+      <p>Have you tried the new adventure game called "The Aegis Knight - 5 : The Lost Legend"? The game that was awarded as the Game Of The Year by IGN? If not! This is the site where you will get all the information you need before trying out the newest version of "The Aegis Knight"!</p>
+      <p>Basic Information : The First of "The Aegis Knight" was created in 1999 by our genius game developer, Bryce Svolveyo. This MMORPG game was based on the story of a dog who saved humanity from a war between angel and demon that took place in the dog world. This dog was born half angel half demon and travel to both heaven and hell to seek his true past. Eventually, the dog realize the angels and demons were constantly at war which also brought destruction to the human world. He was determined to stop this long war and save dog nation from brink of extermination.</p>
+      <h2>System Requirement : </h2>
+      <p class="gap">   PC STORAGE - 1000 GB </p>
+      <p class="gap">   RAM - 20 GB </p>
+      <p class="gap">   CPU - Intel Core i100 9999 </p>
+      <p class="gap">   DIRECTX - DirectX 1000 </p>
+    </div>
+  </div>
+  <div class="r3">
+    Copyright 2019 - Created by Zhihong Liang
+  </div>
+</body>
+
+</html>

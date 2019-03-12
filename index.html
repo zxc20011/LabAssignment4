@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+        <style>
+            * {
+                margin:0px;
+                padding:0px;
+                position:relative;
+            }
+            body, html {
+                width:100vw;
+                height:100vh;
+            }
+            h2 {
+                font-size:18px;
+                font-weight:bold;
+            }
+            .main-container-grid {
+                grid-template-rows:1fr 13fr 1fr;
+                height:100%;
+                display:grid;
+                grid-row-gap:1em;
+            }
+            .r1, .r3 {
+                background-color:#ccc;
+                padding:1em;
+                display:grid;
+                align-items:center;
+            }
+            .r3 {
+                text-align:center;
+            }
+            .r2 {
+                height:100%;
+                background-color:#f1f1f1;
+            }
+            .three-column {
+                display:grid;
+                grid-template-columns:2fr 5fr 3fr;
+                background:white;
+                grid-column-gap:1em;
+            }
+            .c1, .c3 {
+                background:#f4f4f4;
+            }
+            .txt-center {
+                text-align:center;
+                margin:15px auto 0px;
+                border-bottom:1px solid rgb(109, 108, 108);
+                padding-bottom:10px;
+            }
+            .left-nav {
+                list-style-type:none;
+            }
+            .left-nav > li > a {
+                display:block;
+                background-color:#f4f4f4;
+                padding:15px 0px 15px 30px;
+                padding-left:30px;
+                font-weight:bold;
+                text-decoration:none;
+                transition-duration:0.7s;
+            }
+            .left-nav > li > a:hover {
+                background-color:rgb(170, 169, 169);
+            }
+            .c1 {
+                min-width:200px;
+
+            }
+            .c2 {
+                display:grid;
+                grid-gap:1em;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows:min-content;
+            }
+            .c2 > img {
+                width:100%;
+                align-self:center;
+                height:20%;
+
+            }
+            .h2-header {
+                grid-column: 1/5;
+                height:22px;
+                width:100%;
+            }
+            .box-shadow {
+                -webkit-box-shadow: 0px 0px 29px -2px rgba(102,99,102,1);
+                -moz-box-shadow: 0px 0px 29px -2px rgba(102,99,102,1);
+                box-shadow: 0px 0px 29px -2px rgba(102,99,102,1);
+            }
+        </style>
+        <body class="main-container-grid">
+            <div class="r1 box-shadow">
+                <h2>Zhihong Liang</h2>
+            </div>
+            <div class="r2 three-column box-shadow">
+                <div class="c1 box-shadow">
+                    <h2 class="txt-center">Navigation</h2>
+                    <ul class="left-nav">
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact-us.html">Contact Us</a></li>
+                        <li><a href="./gallery-table.html">DLC</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="c2">
+                    <h2 class="txt-center h2-header">Gallery Loaded With Little Cute Heroes</h2>
+                    
+                        <img class="box-shadow" src="./img/dog1.jpg">
+                        <img class="box-shadow" src="./img/dog2.jpg">
+                        <img class="box-shadow" src="./img/dog3.jpg">
+                        <img class="box-shadow" src="./img/dog4.jpg">
+                        <img class="box-shadow" src="./img/dog5.jpg">
+                        <img class="box-shadow" src="./img/dog6.jpg">
+                        <img class="box-shadow" src="./img/dog7.jpg">
+                        <img class="box-shadow" src="./img/dog8.jpg">
+                        <img class="box-shadow" src="./img/dog9.jpg">
+                    
+                </div>
+                <div class="c3">
+                    <h2 class="txt-center">Recent Purchase</h2>
+                </div>
+            </div>
+            <div class="r3 box-shadow">
+                Copyright 2019 - Created by Zhihong Liang
+            </div>
+    </body>
+</html>

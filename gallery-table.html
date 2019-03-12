@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Assignment 4</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+    }
+    body,
+    html {
+      width: 100vw;
+      height: 100vh;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .box-shadow {
+      -webkit-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+    }
+    .main-container-grid {
+      display: grid;
+      grid-template-rows: 1fr 13fr 1fr;
+      height: 100%;
+      grid-row-gap: 1em;
+    }
+    .r1,
+    .r3 {
+      display: grid;
+      background-color: #CCC;
+      padding: 1em;
+      align-items: center;
+    }
+    .r3 {
+      text-align: center;
+    }
+    .r2 {
+      height: 100%;
+      background-color: #f1f1f1;
+    }
+    .three-column {
+      display: grid;
+      grid-template-columns: 2fr 8fr 3fr;
+      background-color: #FFF;
+      grid-column-gap: 1em;
+    }
+    .c1 {
+      min-width: 200px;
+    }
+    .c1,
+    .c3 {
+      background-color: #f4f4f4;
+    }
+    .txt-center {
+      text-align: center;
+      margin: 15px auto 0px;
+      border-bottom: 1px solid #a8a7a7;
+      padding-bottom: 15px;
+    }
+    .left-nav {
+      list-style-type: none;
+    }
+    .left-nav>li>a {
+      display: block;
+      padding: 15px 0px 15px 30px;
+      background-color: #f4f4f4;
+      font-weight: bold;
+      text-decoration: none;
+      transition-duration: 0.7s;
+    }
+    .left-nav>li>a:hover {
+      background-color: #8d8c8c;
+    }
+
+    .h2-content {
+      grid-column: 1 / 5;
+      height: 22px;
+      width: 150px;
+    }
+    .c2>img {
+      width: 100%;
+      align-self: center;
+      max-height: 130px;
+    }
+
+    .grid-button {
+      padding: 6px 12px;
+      background-color: #CCC;
+      float: right;
+    }
+    .gallery-table {
+      display: table;
+      width: 100%;
+    }
+    .gallery-table thead {
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #CCC;
+    }
+    .gallery-table td {
+      border: 1px solid #f1f1f1;
+    }
+    .gallery-table>tbody>tr>td>img {
+      max-width: 150px;
+    }
+    .buy-now {
+      padding: 7px 16px;
+      background-color: green;
+      float: right;
+      border-radius: 6px;
+      color: #FFF;
+      font-size: 16px;
+      transition-duration: 0.5s;
+    }
+    .buy-now:hover {
+      background-color: #9cb69c;
+    }
+  </style>
+</head>
+
+<body class="main-container-grid">
+  <div class="r1 box-shadow">
+    <h2>Zhihong Liang</h2>
+  </div>
+  <div class="r2 three-column">
+    <div class="c1 box-shadow">
+      <h2 class="txt-center">Navigation</h2>
+      <ul class="left-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact-us.html">Contact</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </div>
+    <div class="c2">
+      <div class="c2-first-row">
+        <a href="./index.html" class="grid-button">Back to Home</a>
+        <h2 class="txt-center h2-content">Grid View</h2>
+      </div>
+      <table class="gallery-table">
+        <thead>
+          <tr>
+            <td>
+              Image
+            </td>
+            <td>
+              DLC
+            </td>
+            <td>
+              Price
+            </td>
+            <td>
+              Buy Now
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/dog1.jpg">
+            </td>
+            <td>
+              Legendary Dog Hero 1
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/dog2.jpg">
+            </td>
+            <td>
+                    Legendary Dog Hero 2
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/dog3.jpg">
+            </td>
+            <td>
+                    Legendary Dog Hero 3
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/dog4.jpg">
+            </td>
+            <td>
+                    Legendary Dog Hero 4
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/dog5.jpg">
+            </td>
+            <td>
+                    Legendary Dog Hero 5
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/6.jpg">
+            </td>
+            <td>
+                    Legendary Dog Hero 6
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/dog7.jpg">
+            </td>
+            <td>
+                    Legendary Dog Hero 7
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/dog8.jpg">
+            </td>
+            <td>
+              Legendary Dog Hero 8
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="box-shadow" src="./img/dog9.jpg">
+            </td>
+            <td>
+                    Legendary Dog Hero 9
+            </td>
+            <td>
+              $199
+            </td>
+            <td>
+              <button class="buy-now">Buy Now</button>
+            </td>
+        </tbody>
+      </table>
+    </div>
+    <div class="c3 box-shadow">
+      <h2 class="txt-center">Recent Purchase</h2>
+    </div>
+  </div>
+  <div class="r3">
+    Copyright 2019 - Created by Zhihong Liang
+  </div>
+</body>
+
+</html>
